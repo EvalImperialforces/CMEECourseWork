@@ -95,7 +95,7 @@ Chapter 5: Scientific documents with LATEX
 - 'test.txt' file converted to comma seperated values.
 
 
-A 'Results' folder will be generated when scripts in code are run.
+A 'Results' folder will be generated when scripts in 'Code' are run.
 
 
 
