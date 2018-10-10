@@ -1,0 +1,21 @@
+# Author: Eva Linehan
+# Script: Unix Prac 1
+# Date: 05/10/2018
+
+#1 Count how many lines are in each file
+wc -l ../Data/fasta/*.fasta 
+
+#2 Print everything starting from the second line for the E. coli genome
+tail -n+2 ../Data/fasta/E.coli.fasta
+
+#3 Count the sequence length of this genome
+tail -n+2 ../Data/fasta/E.coli.fasta | tr -d "\n" | wc -m
+#Genome length counted from second line and without newline characters. Character count used to count the entire sequence.
+
+#4 Count the matches of "ATGC" in the genome of E. coli
+tail -n+2 ../Data/fasta/E.coli.fasta  | tr -d "\n"| grep -o "ATGC"| wc -l
+#Starting from the beginning of the sequence (second line) and without newline characters, the 'ATCG' sequence is selected and printed on seperate lines. The lines are then counted to count the number of ATGC matches.
+
+#5 Compute the AT/GC ratio
+echo $(tail -n+2 ../Data/fasta/E.coli.fasta | tr -d "\n" | grep -o [A,T] | wc -l) / $(tail -n+2 ../Data/fasta/E.coli.fasta | tr -d "\n" | grep -o [G,C] | wc -l) | bc -l
+#Starting from the beginning of the sequence (second line) and without newline characters, the total count for 'A' and 'T' are acquired and grouped together by printing the outputted characters on seperate lines and counting the lines. The same is done for 'G' and 'C' characters which are grouped together. 'AT' and 'GC' are seperated into a ratio using '/' which is computed using the precision calculator 'bc'. The math library function computes the ratio to divide 'AT' by 'GC'.
