@@ -17,7 +17,7 @@ for species in taxa:
 print (oaks_loops)
 
 ## Using list comprehensions
-oaks_lc = set([species in taxa if is_an_oak(species)])
+oaks_lc = set([species for species in taxa if is_an_oak(species)])
 print(oaks_lc)
 
 ##Get names in upper case using loops

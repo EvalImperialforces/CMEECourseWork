@@ -1,0 +1,38 @@
+README document for CMEECourseWork Week2
+.
+├── Code
+│   ├── basic_csv.py : None
+│   ├── basic_io.py : None
+│   ├── boilerplate.py : boilerplate example here
+│   ├── cfexercises1.py : None
+│   ├── cfexercises2.py : Modifying cfexercises2.py to make it a module
+│   ├── control_flow.py : Some functions exemplifying the use of control statements
+│   ├── debugme.py : None
+│   ├── lc1.py : List comprehension and loop exercise for bird species 
+│   ├── lc2.py : None
+│   ├── loops.py : None
+│   ├── oaks_debugme.py : None : None
+│   ├── oaks.py : None
+│   ├── __pycache__
+│   │   ├── boilerplate.cpython-35.pyc
+│   │   ├── cfexercises2.cpython-35.pyc
+│   │   ├── control_flow.cpython-35.pyc
+│   │   └── using_name.cpython-35.pyc
+│   ├── scope.py : None
+│   ├── sys.argv.py : None
+│   ├── test_control_flow.py : Some functions exemplifying the use of control statements : Some functions exemplifying the use of control statements
+│   ├── texput.log
+│   └── using_name.py : None
+├── Data
+│   ├── bodymass.csv
+│   ├── JustOaksData.csv
+│   ├── testcsv.csv
+│   └── TestOaksData.csv
+├── README
+├── Sandbox
+│   ├── testout.txt
+│   ├── testp.p
+│   └── test.txt
+└── Temp.txt
+
+4 directories, 30 files

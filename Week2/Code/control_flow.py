@@ -3,7 +3,7 @@
 """Some functions exemplifying the use of control statements"""
 # Replacing comments with docstrings which can be accessed at run time
 
-__author__  = 'Eva Linehan (eval2495@gmail.com)'
+__author__  = 'Eva Linehan (eval2496@gmail.com)'
 __version__ = '0.0.1'
 
 

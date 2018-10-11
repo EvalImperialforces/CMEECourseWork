@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
 
+""" Modifying cfexercises2.py to make it a module"""
+
+__author__  = 'Eva Linehan (eval2496@gmail.com)'
+__version__ = '0.0.1'
+
+import sys
+
 def foo1(x):
     return x ** 0.5
 
@@ -30,4 +37,14 @@ def foo5(x): # a recursive function
         return 1
     return x * foo5(x - 1)
 
-foo5(10)
+def main(argv):
+    print(foo1(6))
+    print(foo2(3,3))
+    print(foo3(5,4,6))
+    print(foo4(12))
+    print(foo5(20))
+    return 0
+
+if (__name__ == "__main__"):
+    status = main(sys.argv)
+    sys.exit(status)
