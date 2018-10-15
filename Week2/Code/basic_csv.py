@@ -1,3 +1,10 @@
+#!usr/bin/env python3
+""" Importing, reading and writing .csv files in python. """
+__author__= 'Eva Linehan (eva.linehan18@imperial.ac.uk)'
+__version__ = 0.01
+__date__ = 'Oct 2018'
+__licence__ = 'Inclass practical'
+
 # Read a file containing:
 # 'Species','Infraorder', 'Family', 'Distribution','Body mass male (Kg)'
 f = open('../Data/testcsv.csv','r')

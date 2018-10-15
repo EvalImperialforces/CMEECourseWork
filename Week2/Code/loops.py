@@ -1,4 +1,9 @@
 #!/usr/bin/env python3
+""" Loop examples. """
+__author__= 'Eva Linehan (eva.linehan18@imperial.ac.uk)'
+__version__ = 0.01
+__date__ = 'Oct 2018'
+__licence__ = 'Inclass practical'
 
 for i in range(5):
     print(i)

@@ -1,5 +1,9 @@
-""" List comprehension and loop exercise for bird species """
-""" Author: Eva Linehan """
+#!usr/bin/env python3
+""" List comprehensions and conventional loops for bird species. """
+__author__= 'Eva Linehan (eva.linehan18@imperial.ac.uk)'
+__version__ = 0.01
+__date__ = 'Oct 2018'
+__licence__ = 'Inclass practical'
 
 birds = ( ('Passerculus sandwichensis','Savannah sparrow',18.7),
           ('Delichon urbica','House martin',19),
@@ -12,20 +16,6 @@ birds = ( ('Passerculus sandwichensis','Savannah sparrow',18.7),
 # lists containing the latin names, common names and mean body masses for
 # each species in birds, respectively.
 
-latin_names, common_names, body_mass = ([] for i in range (3))
-# Three lists defined together
-for name in birds:
-    latin_names.append(name[0])
-    common_names.append(name[1])
-    body_mass.append(name[2])
-#for each list, the selected element in each subset (0th,1st,2nd) is added
-print (latin_names)
-print (common_names)
-print (body_mass)
-
-# (2) Now do the same using conventional loops (you can shoose to do this
-# before 1 !).
-
 latin_names = [name[0] for name in birds]
 print (latin_names)
 
@@ -33,6 +23,20 @@ common_names = [name[1] for name in birds]
 print (common_names)
 
 body_mass = [name[2] for name in birds]
+print (body_mass)
+
+
+# (2) Now do the same using conventional loops (you can shoose to do this
+# before 1 !).
+
+latin_names, common_names, body_mass = ([] for i in range (3))
+for name in birds:
+    latin_names.append(name[0])
+    common_names.append(name[1])
+    body_mass.append(name[2])
+#for each list, the selected element in each subset (0th,1st,2nd) is added
+print (latin_names)
+print (common_names)
 print (body_mass)
 
 

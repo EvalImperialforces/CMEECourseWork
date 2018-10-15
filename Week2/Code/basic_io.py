@@ -1,3 +1,11 @@
+#!usr/bin/env python3
+""" Example of printing input files, generating output files and storing objects. """
+__author__= 'Eva Linehan (eva.linehan18@imperial.ac.uk)'
+__version__ = 0.01
+__date__ = 'Oct 2018'
+__licence__ = 'Inclass practical'
+
+
 ##############################
 #FILE INPUT
 ##############################
@@ -50,11 +58,11 @@ pickle.dump(my_dictionary, f)
 
 f.close()
 
-# With is so much better - autocloses
 # 'testp.p' is binary file, 'as f' is the variable or alias in this case.
-# Pickle . dump (variable, location) 
+# pickle.dump (variable, location) 
 
-with open('../Sandbox/testp.p', 'wb') as f:     
+with open('../Sandbox/testp.p', 'wb') as f:   
+# with command autocloses. 
     pickle.dump(my_dictionary, f)
 
 print("Done")

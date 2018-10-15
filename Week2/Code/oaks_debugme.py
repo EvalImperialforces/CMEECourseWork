@@ -1,3 +1,14 @@
+#!usr/bin/env python3
+""" Missing oaks problem.
+
+Usng doctests to confirm working function and modifying script to handle typos.
+
+ """
+__author__= 'Eva Linehan (eva.linehan18@imperial.ac.uk)'
+__version__ = 0.01
+__date__ = 'Oct 2018'
+__licence__ = 'Inclass practical'
+
 import csv
 import sys
 import pdb
@@ -5,10 +16,10 @@ import doctest
 
 #Define function
 def is_an_oak(name):
-    """ Returns True if name is starts with 'quercus'
+    """ Returns True if genus name is 'quercus'
 
     >>> is_an_oak('quercuss robur')
-    True
+    False
 
     >>> is_an_oak('fraxinus excelsior')
     False
@@ -21,8 +32,10 @@ def is_an_oak(name):
 
     """
     return name.lower().split(' ')[0]=='quercus'
+    # .split seperates string by the space (in between genus and species) to ensure the first element (species in this case) will be quercus.
 
 def main(argv): 
+    """ Removing headers in taxa, print the genus of trees with 'FOUND AN OAK' for any of the variables from is_an_oak. For output file 'JustOaksData.csv' print headers in first row followed by oak species"""    
     f = open('../Data/TestOaksData.csv','r')
     g = open('../Data/JustOaksData.csv','w')
     taxa = csv.reader(f)
@@ -37,8 +50,8 @@ def main(argv):
         print(row[0])
         if is_an_oak(row[0]):
             print('FOUND AN OAK!\n')
-        if headers:
-            if c == 1:
+        if c == 1:
+            if headers:
                 csvwrite.writerow(headers)
     csvwrite.writerow([row[0], row[1]])   
     return 0

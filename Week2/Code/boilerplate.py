@@ -1,7 +1,5 @@
 #!/usr/bin/env python3
-
-"""boilerplate example here"""
-
+""" Boilerplate example. """
 __appname__ = '[boilerplate.py]'
 __author__  = 'Eva Linehan (eval2495@gmail.com)'
 __version__ = '0.0.1'

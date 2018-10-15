@@ -1,3 +1,10 @@
+#!usr/bin/env python3
+""" Loop and list comprehension exercises to create a set of oak species from a list of tree species. """
+__author__= 'Eva Linehan (eva.linehan18@imperial.ac.uk)'
+__version__ = 0.01
+__date__ = 'Oct 2018'
+__licence__ = 'Inclass practical'
+
 ## Finds just those taxa that are oak trees from a list of species
 
 taxa = [ 'Quercus robur',
@@ -7,6 +14,7 @@ taxa = [ 'Quercus robur',
          'Quercus petraea']
 
 def is_an_oak(name):
+    """ Function to return just oak species in lower case. """
     return name.lower().startswith('quercus')
 
 ## Using for loops

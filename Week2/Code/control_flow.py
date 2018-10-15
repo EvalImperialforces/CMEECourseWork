@@ -1,16 +1,14 @@
 #!/usr/bin/env python3
-
 """Some functions exemplifying the use of control statements"""
 # Replacing comments with docstrings which can be accessed at run time
-
-__author__  = 'Eva Linehan (eval2496@gmail.com)'
-__version__ = '0.0.1'
-
+__author__= 'Eva Linehan (eva.linehan18@imperial.ac.uk)'
+__version__ = 0.01
+__date__ = 'Oct 2018'
+__licence__ = 'Inclass practical'
 
 import sys # module to interface our program with the operating system
 
 def even_or_odd(x): #If not specified, x should take value 0.
-    
     """Find whether a number x is even or odd.""" 
     if x % 2 == 0: #Conditional
         return "%d is Even!" % x
