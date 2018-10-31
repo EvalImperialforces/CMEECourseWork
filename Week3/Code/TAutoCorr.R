@@ -51,6 +51,10 @@ Fraction #print
 
 # Interpret results
 library(ggplot2)
+
+pdf("../Data/TAutoCorr_hist.pdf", p)
+
 hist(result,main=NULL,xlab = "Correlation_Result") 
 abline(v=Corr_successive_years, col="blue")
 
+dev.off()
