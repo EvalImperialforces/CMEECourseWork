@@ -1,8 +1,8 @@
 # README Document for CMEECourseWork Week2
-## Author: Eva Linehan - _el1718@imperial.ac.uk_
-## Date: _Oct - 2018_
+## Author: Joseph Palmer - _joseph.palmer18@imperial.ac.uk_
+## Date: _Nov - 2018_
 
-### Description: # Title: CMEE Coursework Week 2
+### Description:  # Title: CMEE Coursework Week 2
 # Author: Eva Linehan
 # Date: Oct 2018
 
@@ -11,6 +11,7 @@ This folder contains CMEE coursework from Week 2 arranged in the 'Data', 'Code' 
 
 This week's coursework comprises of the following chapters of the "Multilingual Quantitative Biologist!" notebook;
 Chapter 6: Biological Computing in Python-I
+
 
 ### Tree map
 ```
@@ -42,11 +43,12 @@ Chapter 6: Biological Computing in Python-I
 │   ├── testcsv.csv
 │   └── TestOaksData.csv
 ├── README.md
+├── Results
 └── Sandbox
     ├── testout.txt
     ├── testp.p
     └── test.txt
 
-3 directories, 28 files
+4 directories, 28 files
 
 ```
