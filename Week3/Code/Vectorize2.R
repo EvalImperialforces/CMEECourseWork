@@ -32,6 +32,11 @@ stochrick<-function(p0=runif(1000,.5,1.5),r=1.2,K=1,sigma=0.2,numyears=100)
 # Now write another function called stochrickvect that vectorizes the above 
 # to the extent possible, with improved performance: 
 
-print("Vectorized Stochastic Ricker takes:")
-print(system.time(res2<-stochrick()))
+#print("Vectorized Stochastic Ricker takes:")
+#a = Sys.time()
+#Sys.sleep(stochrick())
+#b = Sys.time()    
+#print(paste0(round(as.numeric(difftime(time1 = b, time2 = a, units = "secs")), 3), " seconds"))
 
+result <- as.numeric(system.time(stochrick()))
+cat(paste("The execution time for Vectorize2.R was", (result[3]), "\n"))

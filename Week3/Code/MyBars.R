@@ -5,7 +5,7 @@
 
 #clear environments
 rm(list=ls())
-dev.off()
+#dev.off()
 
 a<-read.table("../Data/Results.txt", header = T)
 head(a)

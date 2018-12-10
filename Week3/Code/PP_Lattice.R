@@ -7,11 +7,12 @@
 
 # clear environments
 rm(list=ls())
-dev.off()
+#dev.off()
+
+require(dplyr)
 
 MyDF<-read.csv("../Data/EcolArchives-E089-51-D1.csv")
 
-library(lattice)
 # Creating and saving feeding interaction type by Predator mass
 pdf("../Results/Pred_Lattice.pdf", # Open blank pdf to add lattice
     11.7, 8.3)
@@ -41,7 +42,7 @@ dev.off()
 
 # Calculating mean and median log predator mass, prey mass, 
 # and predator-prey size ratio by feeding type.
-require(dplyr)
+
 
 pp_results <- MyDF %>% 
   group_by(Type.of.feeding.interaction) %>%
@@ -55,5 +56,6 @@ pp_results <- MyDF %>%
     )
 # Group by feeding type and summarise the mean and median of all specified variables
 print(pp_results)
-write.csv(pp_results, file= "../Data/PP_Results.csv", row.names = F)
+write.csv(pp_results, file= "../Results/PP_Results.csv", row.names = F)
 # Write output to csv file
+

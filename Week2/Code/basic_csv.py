@@ -5,6 +5,7 @@ __version__ = 0.01
 __date__ = 'Oct 2018'
 __licence__ = 'Inclass practical'
 
+import csv
 # Read a file containing:
 # 'Species','Infraorder', 'Family', 'Distribution','Body mass male (Kg)'
 f = open('../Data/testcsv.csv','r')
@@ -22,7 +23,7 @@ f.close()
 
 # write a file containing only species name and Body mass
 f = open ('../Data/testcsv.csv','r')
-g = open ('../Data/bodymass.csv','w')
+g = open ('../Results/bodymass.csv','w')
 
 csvread = csv.reader(f)
 csvwrite = csv.writer(g)

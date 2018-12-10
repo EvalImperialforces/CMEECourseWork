@@ -16,7 +16,7 @@ birds = ( ('Passerculus sandwichensis','Savannah sparrow',18.7),
 # lists containing the latin names, common names and mean body masses for
 # each species in birds, respectively.
 
-latin_names = [name[0] for name in birds]
+latin_names = [name[0] for name in birds] 
 print (latin_names)
 
 common_names = [name[1] for name in birds]
@@ -29,7 +29,7 @@ print (body_mass)
 # (2) Now do the same using conventional loops (you can shoose to do this
 # before 1 !).
 
-latin_names, common_names, body_mass = ([] for i in range (3))
+latin_names, common_names, body_mass = ([] for i in range (3)) 
 for name in birds:
     latin_names.append(name[0])
     common_names.append(name[1])
@@ -40,7 +40,4 @@ print (common_names)
 print (body_mass)
 
 
-# ANNOTATE WHAT EVERY BLOCK OR IF NECESSARY, LINE IS DOING!
 
-# ALSO, PLEASE INCLUDE A DOCSTRING AT THE BEGINNING OF THIS FILE THAT
-# SAYS WHAT THE SCRIPT DOES AND WHO THE AUTHOR IS.

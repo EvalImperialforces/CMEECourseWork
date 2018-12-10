@@ -71,7 +71,7 @@ p.xlabel('Time')
 p.ylabel('Population density')
 p.title('Consumer-Resource population dynamics')
 p.text(8, 24, 'r = {:.2}, a = {:.2}, z = {:.2}, e = {:.2}'.format(r, a, z, e))
-p.show()# Display the figure
+#p.show()# Display the figure
 
 f1.savefig('../Results/LV2_model.pdf')
 

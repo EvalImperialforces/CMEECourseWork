@@ -13,3 +13,6 @@ python3 -m cProfile LV2.py 2>&1 | head -10
 
 echo "Run and profile LV3.py"
 python3 -m cProfile LV3.py 2>&1 | head -10
+
+echo "Run and profile LV4.py"
+python3 -m cProfile LV4.py 2>&1 | head -10

@@ -26,12 +26,14 @@ rainfall = (('JAN',111.4),
 # the amount of rain was greater than 100 mm.
 
 Rainfallover100mm = [x for x in rainfall if x[1]>=100]
+# For every rainfall measurement in months in tuple, if rainfall is greater than 100mm add to list and print
 print (Rainfallover100mm)
 
 # (2) Use a list comprehension to create a list of just month names where the
 # amount of rain was less than 50 mm. 
 
 Rainfallless50mm = [x for x in rainfall if x[1]<50]
+# For every rainfall measurement in months in tuple, if rainfall is less than 50mm add to list and print
 print (Rainfallless50mm)
 
 # (3) Now do (1) and (2) using conventional loops (you can choose to do 
@@ -40,22 +42,19 @@ print (Rainfallless50mm)
 #Loop for (1)           
 Rainfallover100mm=[]
 Item=list(rainfall)
-for x in rainfall:
-    if x[1]>100:
-        Rainfallover100mm.append(x)
+for x in rainfall: # For months and measurements in rainfall tuple
+    if x[1]>100: # If measurements are greater than 100mm
+        Rainfallover100mm.append(x) # Append to list
 print(Rainfallover100mm)
 
 
 #Loop for (2)
 Rainfallless50mm=[]
 Item=list(rainfall)
-for x in rainfall:
-    if x[1]<50:
-        Rainfallless50mm.append(x)
+for x in rainfall: # For months and measurements in rainfall tuple
+    if x[1]<50: # If measurements are less than 50mm
+        Rainfallless50mm.append(x) # Append to list
 print(Rainfallless50mm)
 
 
-# ANNOTATE WHAT EVERY BLOCK OR IF NECESSARY, LINE IS DOING! 
 
-# ALSO, PLEASE INCLUDE A DOCSTRING AT THE BEGINNING OF THIS FILE THAT 
-# SAYS WHAT THE SCRIPT DOES AND WHO THE AUTHOR IS

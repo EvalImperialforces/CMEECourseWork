@@ -19,4 +19,4 @@ def main(argv):
 if __name__ =="__main__":
     print('This program is being run by itself')
     status = main(sys.argv)
-    sys.exit("Done!")
+    sys.exit(status)

@@ -7,20 +7,26 @@
 #clear environments
 rm(list=ls())
 
-M<- matrix(runif(1000000),1000,1000)
+M <- matrix(runif(1000000),1000,1000)
 
 SumALLELEMENTS <- function(M) {
   Dimensions <- dim(M)
   Tot<-0
   for (i in 1:Dimensions[1]){
     for (j in 1:Dimensions[2]){
-      Tot<- Tot+M[i,j]
+      Tot <- Tot+ M[i,j]
     }
   }
   return(Tot)
 }
 
 ## This on my computer takes about 1 sec
-print(system.time(SumALLELEMENTS(M)))
+result <- as.numeric(system.time(SumALLELEMENTS(M)))
+cat(paste("The execution time for Vectorize.1 R was", result[3], "\n"))
+
+#a = Sys.time()
+#Sys.sleep(SumALLELEMENTS(M))
+#b = Sys.time()    
+#print(paste0(round(as.numeric(difftime(time1 = b, time2 = a, units = "secs")), 3), " seconds"))
 ## While this takes about 0.01 sec
-print(system.time(sum(M)))
+#print(system.time(sum(M)))

@@ -12,7 +12,7 @@ import matplotlib.pyplot as p
 # Generating links and randomly connected network
 
 def GenRdnAdjList(N=2, C=0.5): # C = Probability of connectance
-    """ Building random adjacent C list """
+    """ Building random adjacent connectedness probability list """
     Ids = range(N)
     ALst = []
     for i in Ids: # For i in range (N)

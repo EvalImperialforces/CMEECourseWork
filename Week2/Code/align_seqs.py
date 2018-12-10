@@ -6,13 +6,14 @@ __date__ = 'Oct 2018'
 __licence__ = 'Inclass practical'
  
 # Sequences in input file
-#seq2 = "ATCGCCGGATTACGGG"
-#seq1 = "CAATTCGGAT"
+seq2 = "ATCGCCGGATTACGGG"
+seq1 = "CAATTCGGAT"
 
 import sys
 """ 
 Processes DNA sequences from .fasta file to print best alignment and score in .txt file.
 """
+
 seq_dict = {}
 with open("../Data/Seqs_input.fasta") as f:
     for line in f:
@@ -41,12 +42,15 @@ if l1 >= l2:
     s2 = seq2
 else:
     s1 = seq2
-    s2 = seq1
+    s2 = seq1cd 
     l1, l2 = l2, l1 # swap the two lengths
 
-## A function that computes a score by returning the number of matches starting
-## from arbitrary startpoint (chosen by user)
+
 def calculate_score(s1, s2, l1, l2, startpoint):
+
+    """ A function that computes a score by returning the number of matches 
+    starting from arbitrary startpoint (chosen by user) """
+    
     matched = "" # to hold string displaying alignements
     score = 0
     for i in range(l2):
@@ -78,7 +82,7 @@ my_best_score = -1
 for i in range(l1): # Note that you just take the last alignment with the highest score
     z = calculate_score(s1, s2, l1, l2, i)
     if z > my_best_score:
-        my_best_align = "." * i + s2 # think about what this is doing!
+        my_best_align = "." * i + s2 # Add alignement followed by sequence two
         my_best_score = z 
 print(my_best_align)
 print(s1)
@@ -86,7 +90,8 @@ print("Best score:", my_best_score)
 
 # Save to an output
 output = "../Results/Best_Match.txt"
-outfile = '{}\n {}\nBest Score {}'.format(my_best_align, s1, my_best_score) #Formats output to print best alignment followed by best score
+outfile = '{}\n {}\nBest Score {}'.format(my_best_align, s1, my_best_score) 
+#Formats output to print best alignment followed by best score
 with open("../Results/Best_Match.txt", "w") as output:
     output.write(outfile)
 print ("Done!")

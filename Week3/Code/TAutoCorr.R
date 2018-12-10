@@ -52,7 +52,7 @@ Fraction #print
 # Interpret results
 library(ggplot2)
 
-pdf("../Data/TAutoCorr_hist.pdf", p)
+pdf("../Data/TAutoCorr_hist.pdf")
 
 hist(result,main=NULL,xlab = "Correlation_Result") 
 abline(v=Corr_successive_years, col="blue")

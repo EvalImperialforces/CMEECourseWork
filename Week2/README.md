@@ -1,8 +1,8 @@
 # README Document for CMEECourseWork Week2
-## Author: Joseph Palmer - _joseph.palmer18@imperial.ac.uk_
-## Date: _Nov - 2018_
+## Author: Eva Linehan - _el1718@ic.ac.uk_
+## Date: _Dec - 2018_
 
-### Description:  # Title: CMEE Coursework Week 2
+### Description:    # Title: CMEE Coursework Week 2
 # Author: Eva Linehan
 # Date: Oct 2018
 
@@ -13,10 +13,14 @@ This week's coursework comprises of the following chapters of the "Multilingual 
 Chapter 6: Biological Computing in Python-I
 
 
+
+
 ### Tree map
 ```
 .
 ├── Code
+│   ├── align_seqs_better.py : Aligning DNA sequences from any .fasta file, assigning a score based on the start position  and number of base matches. 
+│   ├── align_seqs_fasta.py : Aligning DNA sequences from any .fasta file, assigning a score based on the start position  and number of base matches. 
 │   ├── align_seqs.py : Aligning DNA sequences and assigning a score based on the start position and number of base matches. 
 │   ├── basic_csv.py : Importing, reading and writing .csv files in python. 
 │   ├── basic_io.py : Example of printing input files, generating output files and storing objects. 
@@ -29,7 +33,7 @@ Chapter 6: Biological Computing in Python-I
 │   ├── lc1.py : List comprehensions and conventional loops for bird species. 
 │   ├── lc2.py : List comprehensions and conventional loops of average UK rainfall for 1910 by month 
 │   ├── loops.py : Loop examples. 
-│   ├── oaks_debugme.py : Missing oaks problem.  Usng doctests to confirm working function and modifying script to handle typos.    : Sample script to understand debugger. 
+│   ├── oaks_debugme.py : Missing oaks problem.  Debug initial code, define oak species in file of trees and   write output file of oak species  : Sample script to understand debugger. 
 │   ├── oaks.py : Loop and list comprehension exercises to create a set of oak species from a list of tree species. 
 │   ├── scope.py : Script to test local and global variables. 
 │   ├── sys.argv.py : Script to understand 'sys.argv' function. 
@@ -37,8 +41,10 @@ Chapter 6: Biological Computing in Python-I
 │   ├── tuple.py : Script to print tuples from birds on seperate lines 
 │   └── using_name.py : Script to test __name__ = __main__ function. 
 ├── Data
-│   ├── bodymass.csv
-│   ├── JustOaksData.csv
+│   ├── fasta
+│   │   ├── 407228326.fasta
+│   │   ├── 407228412.fasta
+│   │   └── E.coli.fasta
 │   ├── Seqs_input.fasta
 │   ├── testcsv.csv
 │   └── TestOaksData.csv
@@ -49,6 +55,6 @@ Chapter 6: Biological Computing in Python-I
     ├── testp.p
     └── test.txt
 
-4 directories, 28 files
+5 directories, 33 files
 
 ```

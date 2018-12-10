@@ -40,7 +40,7 @@ else:
     e = (args.values[3]) # efficiency in energy to consumer biomass
 
 
-#t = sc.linspace(0, 30,  1500) # 0-15 is arbitrary, depends on organism lifecycle
+# t = sc.linspace(0, 30,  1500) # 0-15 is arbitrary, depends on organism lifecycle
 # 1000 also arbitrary but hints at precision of resolution. 1000 subdivisions.
 
 R0 = 10 #R0 = population at beginning
