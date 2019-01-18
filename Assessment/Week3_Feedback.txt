@@ -1,0 +1,67 @@
+Starting weekly assessment for Eva, Week3
+
+Current Points = 100
+
+Note that: 
+(1) Major sections begin with a double "====" line 
+(2) Subsections begin with a single "====" line 
+(3) Code output or text file content are printed within single "*****" lines 
+
+======================================================================
+======================================================================
+Your Git repo size this week is about 9.39 MiB on disk 
+
+PART 1: Checking project workflow...
+
+Found the following directories in parent directory: Week1, Week7, Assessment, Week10, Week2, .git, Miniproject
+
+Found the following files in parent directory: .gitignore, README.md
+
+Checking for key files in parent directory...
+
+Found .gitignore in parent directory, great! 
+
+Printing contents of .gitignore:
+**********************************************************************
+*.tmp
+*~
+*.pyc
+/Week9/
+**********************************************************************
+
+Found README in parent directory, named: README.md
+
+Printing contents of README.md:
+**********************************************************************
+# Title: CMEE Coursework Repository
+# Author: Eva Linehan
+# Date: Oct 2018
+
+The purpose of this repository is to store CMEE required coursework for assessment. Coursework is organised by Week, for example coursework for week one will reside in the "Week1" folder. 
+
+In each "Week" folder, coursework is arranged in the 'Data', 'Code', 'Sandbox' and 'Results' folders. The 'Data' folder comprises of data files used in practical exercises and assessments during the week. 'Code' contains code used to execute commands as part of in-class examples and weekly assessments. The 'Sandbox'folder is primarily for storing output files from test examples and the 'Results' folder will contain output files when scripts in 'Code' are executed.
+
+
+
+ 
+**********************************************************************
+
+======================================================================
+Looking for the weekly directories...
+
+Found 4 weekly directories: Week1, Week10, Week2, Week7
+
+The Week3 directory will be assessed 
+
+======================================================================
+======================================================================
+PART 2: Checking weekly code and workflow...
+
+======================================================================
+======================================================================
+
+FINISHED WEEKLY ASSESSMENT
+
+Current Points for the Week = 100
+
+NOTE THAT THESE ARE POINTS, NOT MARKS FOR THE WEEK!
